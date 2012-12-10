@@ -1,0 +1,17 @@
+Use m4 macros to ease creation of html slides. Slide
+code taken from Google ( http://code.google.com/p/html5slides/ ),
+see AUTHORS and LICENSE for more information.
+
+Copy test directory to a new dir. Modify Makefile to build
+this directory, and optionally change the TEST target to 
+point to new dir. Use 'make' to build, or 'make run' to
+build and view in browser. Tested on OSX and Linux.
+
+$ cp -a test mypresentation
+$ git add mypresentation
+$ # edit mypresentation, add mypresentation to Makefile
+$ git commit -am 'Update'
+$ make run
+
+Amit Bakshi
+12/04/2012

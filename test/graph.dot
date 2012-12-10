@@ -1,0 +1,23 @@
+digraph {
+    size="10,8"
+    a [label="master"];
+    b [label="slave1 (win)" shape=box];
+    c [label="slave2 (osx)" shape=box];
+    d [label="slave3 (linux2.6)" shape=box];
+    e [label="slave4 (linux3.2)" shape=box];
+    f [label="slave5 (linux3.6)" shape=box];
+    _a [label="master"];
+    a -> b;
+    a -> c;
+    a -> d;
+    a -> e;
+    a -> f;
+    c -> d;
+    c -> e;
+    c -> f;
+    b -> _a;
+    c -> _a;
+    d -> _a;
+    e -> _a;
+    f -> _a;
+    }
